@@ -1,0 +1,59 @@
+# these packages are used to automate unit tests
+attrs==19.3.0
+importlib-metadata==1.6.0
+more-itertools==8.2.0
+packaging==20.3
+pluggy==0.13.1
+py==1.8.1
+pyparsing==2.4.7
+pytest==5.4.1
+six==1.14.0
+wcwidth==0.1.9
+zipp==3.1.0
+# these packages are used to generate an html report for the unit tests
+pytest-html==2.1.1
+pytest-metadata==1.8.0
+# this package is used to calculate unit test coverage
+coverage==5.1
+# this package is used to generate a code coverage badge
+coverage-badge==1.0.1
+# these packages are used to do code analysis
+mccabe==0.6.1
+pycodestyle==2.5.0
+pydocstyle==5.0.2
+pyflakes==2.2.0
+pylama==7.7.1
+snowballstemmer==2.0.0
+# these packages are used to calculate code metrics
+colorama==0.4.1
+entrypoints==0.3
+flake8==3.7.9
+flake8-polyfill==1.0.2
+future==0.18.2
+mando==0.6.4
+radon==4.1.0
+# these packages are used to analyze the code for security vulnerabilities
+bandit==1.6.2
+gitdb==4.0.4
+GitPython==3.1.1
+pbr==5.4.5
+PyYAML==5.3.1
+smmap==3.0.2
+stevedore==1.32.0
+# these packages are used to check dependencies for security issues
+certifi==2020.4.5.1
+chardet==3.0.4
+click==7.1.2
+dparse==0.5.1
+idna==2.9
+requests==2.23.0
+safety==1.9.0
+toml==0.10.0
+urllib3==1.25.9
+# these packages are used to do static type analysis
+decorator==4.4.2
+importlab==0.5.1
+networkx==2.4
+ninja==1.9.0.post1
+pytype==2020.4.22
+typed-ast==1.4.1
