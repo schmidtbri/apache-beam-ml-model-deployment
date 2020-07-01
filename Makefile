@@ -44,9 +44,10 @@ test-reports: clean-pyc clean-test ## Run unit test suite with reporting
 	mkdir ./reports/unit_tests
 	mkdir ./reports/coverage
 	mkdir ./reports/badge
-	python -m coverage run --source model_beam_job -m pytest --verbose --color=yes --html=./reports/unit_tests/report.html --junitxml=./reports/unit_tests/report.xml $(TEST_PATH)
-	coverage html -d ./reports/coverage
-	coverage-badge -o ./reports/badge/coverage.svg
+	-python -m coverage run --source model_beam_job -m pytest --verbose --color=yes --html=./reports/unit_tests/report.html --junitxml=./reports/unit_tests/report.xml $(TEST_PATH)
+	-coverage html -d ./reports/coverage
+	-coverage-badge -o ./reports/badge/coverage.svg
+	rm -rf .coverage
 
 clean-test:	## Remove test artifacts
 	rm -rf .pytest_cache

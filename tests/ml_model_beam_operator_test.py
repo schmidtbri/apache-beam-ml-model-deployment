@@ -1,7 +1,6 @@
 import unittest
 from ml_model_abc import MLModel
-from model_beam_job.model_manager import ModelManager
-from model_beam_job.ml_model_beam_operator import MLModelBeamOperator
+from model_beam_job.ml_model_operator import MLModelPredictOperation
 
 
 # creating an MLModel class to test with

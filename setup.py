@@ -21,6 +21,7 @@ setup(
     author_email="6666331+schmidtbri@users.noreply.github.com",
     packages=["model_beam_job"],
     python_requires=">=3.5",
-    install_requires=["iris-model@git+https://github.com/schmidtbri/ml-model-abc-improvements#egg=iris_model@master"],
+    install_requires=["iris-model@git+https://github.com/schmidtbri/ml-model-abc-improvements#egg=iris_model@master",
+                      "apache_beam"],
     tests_require=['pytest', 'pytest-html', 'pylama', 'coverage', 'coverage-badge', 'bandit', 'safety']
 )

@@ -11,7 +11,7 @@ Deploying an ML model in a Apache Beam service.
 This code is used in this [blog post]().
 
 ## Requirements
-Docker
+Python 3
 
 ## Installation 
 The Makefile included with this project contains targets that help to automate several tasks.
@@ -41,6 +41,7 @@ make dependencies
 
 ## Running the Unit Tests
 To run the unit test suite execute these commands:
+
 ```bash
 # first install the test dependencies
 make test-dependencies
