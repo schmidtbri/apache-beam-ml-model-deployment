@@ -7,6 +7,15 @@ TEST_PATH=./tests
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
+build-dependencies: ## Download and build dependencies
+	mkdir dependencies
+	wget https://github.com/schmidtbri/ml-model-abc-improvements/archive/master.zip -O dependencies/master.zip
+	unzip dependencies/master.zip -d dependencies
+	cd dependencies/ml-model-abc-improvements-master && python setup.py sdist
+	mv dependencies/ml-model-abc-improvements-master/dist/iris_model-0.1.0.tar.gz dependencies/iris_model-0.1.0.tar.gz
+	rm -rf dependencies/ml-model-abc-improvements-master
+	rm dependencies/master.zip
+
 clean-pyc: ## Remove python artifacts.
 	find . -name '*.pyc' -exec rm -f {} +
 	find . -name '*.pyo' -exec rm -f {} +

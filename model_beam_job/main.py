@@ -30,11 +30,8 @@ class JsonCoder(Coder):
 def run(argv=None):
     """Build beam pipeline and run it."""
     parser = argparse.ArgumentParser()
-    parser.add_argument('--input', dest='input', help='Input file to process.')
-    parser.add_argument('--output', dest='output', required=True, help='Output file to write results to.')
-    # parser.add_argument('--project', default=None, help='Name of the Cloud project owning the Dataflow job.')
-    # parser.add_argument('--job_name', default=None, help='Name of the Cloud Dataflow job.')
-    # parser.add_argument('--region', default=None, help='The Google Compute Engine region for creating Dataflow job.')
+    parser.add_argument('--input', required=True, help='Input file to process.')
+    parser.add_argument('--output', required=True, help='Output file to write results to.')
     known_args, pipeline_args = parser.parse_known_args(argv)
 
     pipeline_options = PipelineOptions(pipeline_args)
