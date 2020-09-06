@@ -8,7 +8,7 @@ Deploying an ML model in an Apache Beam job.
 
 Deploying an ML model in a Apache Beam service.
 
-This code is used in this [blog post]().
+This code is used in this [blog post](https://medium.com/@brianschmidt_78145/an-apache-beam-ml-model-deployment-ac31c6f2d9b2).
 
 ## Requirements
 Python 3
