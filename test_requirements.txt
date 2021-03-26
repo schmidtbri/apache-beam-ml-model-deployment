@@ -37,7 +37,7 @@ bandit==1.6.2
 gitdb==4.0.4
 GitPython==3.1.1
 pbr==5.4.5
-PyYAML==5.3.1
+PyYAML==5.4
 smmap==3.0.2
 stevedore==1.32.0
 # these packages are used to check dependencies for security issues
