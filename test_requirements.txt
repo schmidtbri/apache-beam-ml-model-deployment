@@ -49,7 +49,7 @@ idna==2.9
 requests==2.23.0
 safety==1.9.0
 toml==0.10.0
-urllib3==1.25.9
+urllib3==1.26.5
 # these packages are used to do static type analysis
 decorator==4.4.2
 importlab==0.5.1
