@@ -34,7 +34,7 @@ idna==2.10
 joblib==0.16.0
 mock==2.0.0
 monotonic==1.5
-numpy==1.19.1
+numpy==1.22.0
 oauth2client==3.0.0
 pbr==5.4.5
 protobuf==3.12.2
